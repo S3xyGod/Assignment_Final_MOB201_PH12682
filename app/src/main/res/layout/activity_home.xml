@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud_2_dark"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/txt_web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:onClick="openHomePage"
+        android:text="Trang chủ"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/img_web"
+        app:layout_constraintTop_toBottomOf="@+id/img_web" />
+
+    <ImageView
+        android:id="@+id/img_web"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="48dp"
+        android:onClick="openHomePage"
+        app:layout_constraintStart_toStartOf="@+id/img_map"
+        app:layout_constraintTop_toBottomOf="@+id/img_map"
+        app:srcCompat="@drawable/web" />
+
+    <TextView
+        android:id="@+id/txt_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:onClick="openMap"
+        android:text="Bản đồ"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/img_map"
+        app:layout_constraintTop_toBottomOf="@+id/img_map" />
+
+    <TextView
+        android:id="@+id/txt_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:onClick="openCourse"
+        android:text="Khóa học"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/img_course"
+        app:layout_constraintTop_toBottomOf="@+id/img_course" />
+
+    <TextView
+        android:id="@+id/txt_news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="10dp"
+        android:onClick="openNews"
+        android:text="Tin tức"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/img_news"
+        app:layout_constraintTop_toBottomOf="@+id/img_news" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_trans" />
+
+    <ImageView
+        android:id="@+id/img_course"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="55dp"
+        android:onClick="openCourse"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:srcCompat="@drawable/edu" />
+
+    <ImageView
+        android:id="@+id/img_news"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:onClick="openNews"
+        android:layout_marginStart="60dp"
+        app:layout_constraintStart_toEndOf="@+id/img_course"
+        app:layout_constraintTop_toTopOf="@+id/img_course"
+        app:srcCompat="@drawable/news" />
+
+    <ImageView
+        android:id="@+id/img_map"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="48dp"
+        android:onClick="openMap"
+        app:layout_constraintStart_toStartOf="@+id/img_course"
+        app:layout_constraintTop_toBottomOf="@+id/img_course"
+        app:srcCompat="@drawable/map" />
+
+    <ImageView
+        android:id="@+id/img_page"
+        android:onClick="openFB"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="60dp"
+        app:layout_constraintStart_toEndOf="@+id/img_map"
+        app:layout_constraintTop_toTopOf="@+id/img_map"
+        app:srcCompat="@drawable/fb" />
+
+    <TextView
+        android:id="@+id/txt_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:onClick="openFB"
+        android:text="Fan Page"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/img_page"
+        app:layout_constraintTop_toBottomOf="@+id/img_page" />
+</androidx.constraintlayout.widget.ConstraintLayout>
